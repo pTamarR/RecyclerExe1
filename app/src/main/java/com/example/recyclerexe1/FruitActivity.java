@@ -41,6 +41,7 @@ public class FruitActivity extends AppCompatActivity {
         FruitAdapter adapter = new FruitAdapter(fruitList);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setPadding(0, 0, 0, 0);
     }
 
     private void initUI() {
