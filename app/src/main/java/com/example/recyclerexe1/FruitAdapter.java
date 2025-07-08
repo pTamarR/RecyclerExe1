@@ -1,5 +1,6 @@
 package com.example.recyclerexe1;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -33,7 +34,8 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.FruitViewHol
     @NonNull
     @Override
     public FruitAdapter.FruitViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = View.inflate(parent.getContext(),R.layout.item_row,null);
+        //View view = View.inflate(parent.getContext(),R.layout.item_row,null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_row, parent, false);
         return new FruitViewHolder(view);
     }
 
